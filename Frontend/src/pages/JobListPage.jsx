@@ -59,12 +59,12 @@ const handleSubmit = (e) => {
   }
 
 
-  axios.post("http://localhost:3000/new", formData)
+  axios.post("https://job-portal-admin-nn96.onrender.com/new", formData)
     .then(() => {
       console.log("Job created successfully!");
       handleClose();
       
-      return axios.get("http://localhost:3000/jobs");
+      return axios.get("https://job-portal-admin-nn96.onrender.com/jobs");
     })
     .then((res) => {
       setJobs(res.data);
@@ -99,7 +99,7 @@ const handleJobTypeSearch  = (e) => {
 
 useEffect(()=>{
   setIsLoading(true)
-  axios.get("http://localhost:3000/jobs")
+  axios.get("https://job-portal-admin-nn96.onrender.com/jobs")
   .then(res=>{
     setJobs(res.data)
   })
