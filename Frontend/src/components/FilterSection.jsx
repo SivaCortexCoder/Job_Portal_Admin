@@ -1,5 +1,6 @@
 import React from 'react'
 import { HiOutlineSearch,HiOutlineLocationMarker,HiOutlineUser } from 'react-icons/hi'
+import TwoWaySlider from './Slider'
 
 const FilterSection = ({search,handleJobTypeSearch,handleLocationSearch}) => {
   return (
@@ -48,7 +49,7 @@ const FilterSection = ({search,handleJobTypeSearch,handleLocationSearch}) => {
                 <span>₹50k - ₹80k</span>
             </div>
             <div>
-                <input type="range" name="" id=""  className="w-full h-1 bg-gray-300 rounded-lg accent-black outline-none" />
+                <TwoWaySlider/>
             </div>
             
         </div>
